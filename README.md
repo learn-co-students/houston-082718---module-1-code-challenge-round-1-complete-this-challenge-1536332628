@@ -49,7 +49,7 @@ We've provided you with a console that you can use to test your code. To enter a
 
 ---
 
-#### Build out the following methods on the `Review` class
+<!-- #### Build out the following methods on the `Review` class
 
 - `Review.all`
   - returns all of the reviews
@@ -62,22 +62,22 @@ We've provided you with a console that you can use to test your code. To enter a
 - `Review#rating`
   - returns the star rating for a restaurant. This should be an integer from 1-5
 - `Review#content`
-  - returns the review content, as a string, for a particular review
+  - returns the review content, as a string, for a particular review -->
 
 ---
 
 ### Associations and Aggregate Methods
 
-#### Customer
+<!-- #### Customer
 
 - `Customer#add_review(restaurant, content, rating)`
   - given a **restaurant object**, some review content (as a string), and a star rating (as an integer), creates a new review and associates it with that customer and restaurant.
 - `Customer#num_reviews`
   - Returns the total number of reviews that a customer has authored
 - `Customer#restaurants`
-  - Returns a **unique** array of all restaurants a customer has reviewed
+  - Returns a **unique** array of all restaurants a customer has reviewed -->
 
-#### Restaurant
+<!-- #### Restaurant
 
 - `Restaurant#customers`
   - Returns a **unique** list of all customers who have reviewed a particular restaurant.
@@ -86,6 +86,6 @@ We've provided you with a console that you can use to test your code. To enter a
 - `Restaurant#average_star_rating`
   - returns the average star rating for a restaurant based on its reviews
 - `Restaurant#longest_review`
-  - returns the longest review content for a given restaurant
+  - returns the longest review content for a given restaurant -->
 
 ---
