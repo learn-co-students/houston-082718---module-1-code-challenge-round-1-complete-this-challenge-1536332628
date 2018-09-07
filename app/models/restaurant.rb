@@ -18,13 +18,9 @@ class Restaurant
   end
 
   def customers
-    arr = []
-    Review.all.select do |review|
-      if review.restaurant == self
-        arr << review.customer
-      end
+    self.reviews.map do |review|
+      review.customer
     end
-    arr.uniq
   end
 
   def reviews
@@ -38,20 +34,14 @@ class Restaurant
     self.reviews.each do |review|
       total_stars += review.rating
     end
-    avg = (total_stars.to_f / self.reviews.length)
-    avg 
+    total_stars.to_f / self.reviews.length
   end
 
   def longest_review
-    review_length = 0
-    review_content = nil
-    self.reviews.each do |review|
-      if review.content.length > review_length
-        review_length = review.content.length
-        review_content = review.content
-      end
+    arr = self.reviews.sort_by do |review|
+      review.content.length
     end
-    review_content
+    arr[-1].content
   end
 
 end

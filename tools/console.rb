@@ -15,10 +15,10 @@ graham = Customer.new("Graham", "Watson")
 graham2 = Customer.new("Graham", "Wilson")
 linda = Customer.new("Linda", "Evans")
 
-greview1 = graham.add_review(mcd, 1, "this place blows")
-graham.add_review(mcd2, 1, "this place also blows")
-graham.add_review(bk, 2, "this place is mediocre")
-linda.add_review(mcd, 0, "how is this place allowed to exist?")
+greview1 = graham.add_review(mcd, "this place blows", 1)
+graham.add_review(mcd2, "this place also blows", 1)
+graham.add_review(bk, "this place is mediocre", 2.6)
+linda.add_review(mcd, "how is this place allowed to exist?", 0)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
