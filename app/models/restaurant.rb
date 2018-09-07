@@ -39,18 +39,15 @@ class Restaurant
     ratings = reviews.map do |review|
       review.rating
     end
+    ratings.inject(0) {|s,r| s+r}/ratings.size.to_f
 
-    # sum = ratings.inject(0) do |sum, rating|
-    #   (sum + rating)
-    # end
-    # sum/ratings.size.to_f
   end
 
   def longest_review
-    # reviews = Review.all.select do |review|
-    #   review.restaurant == self
-    # end
-    # reviews.max_by {|review|(review.content)}
+    reviews = Review.all.select do |review|
+      review.restaurant == self
+    end
+    reviews.max_by {|review| review.content.length }
   end
 
   def self.find_by_name(name)

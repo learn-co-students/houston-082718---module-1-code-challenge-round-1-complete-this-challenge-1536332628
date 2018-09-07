@@ -19,7 +19,7 @@ review_2 = Review.new(customer_1,restaurant_2,4,"Love cheese cake. Will come aga
 review_3 = Review.new(customer_2,restaurant_1,1,"Bad chicken dish. Will NOT come again")
 review_4 = Review.new(customer_2,restaurant_2,3,"Not too Bad cake. Maybe come again")
 
-review_5 = customer_1.add_review(restaurant_1,"OK",4)
+review_5 = customer_3.add_review(restaurant_1,4,"Good job! Will come again")
 
 
 

@@ -24,8 +24,8 @@ class Customer
     @@all
   end
 
-  def add_review(restaurant, content, rating)
-    Review.new(self,restaurant,content,rating)
+  def add_review(restaurant, rating, content)
+    Review.new(self,restaurant,rating,content)
   end
 
   def num_reviews
